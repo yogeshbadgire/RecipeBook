@@ -40,3 +40,7 @@ a {
   border-radius: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+.notes ul, .notes ol {
+  padding-left: 20px;
+}
