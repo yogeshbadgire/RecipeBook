@@ -1,0 +1,34 @@
+
+    body {
+  font-family: Epilogue;
+  font-weight: 400;
+  margin: 5;
+  padding: 3px;
+  background-color: #e9e5d9;
+  line-height: 1.3;
+}
+h1 {
+  color: #333333;
+  line-height: 0.5;
+}
+h3 {
+  color: #252525;
+}
+.recipe {
+  background-color: #fdf9e9;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.ingredients, .instructions {
+  margin-top: 20px;
+}
+.ingredients ul, .instructions ol {
+  padding-left: 20px;
+}
+a {
+  text-decoration: none; 
+  color: black;
+  font-weight: 500;
+  line-height: 1.5;
+}
