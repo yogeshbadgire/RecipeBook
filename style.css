@@ -13,6 +13,7 @@ h1 {
 }
 h3 {
   color: #252525;
+  line-height: 0.5;
 }
 .recipe {
   background-color: #fdf9e9;
@@ -43,4 +44,24 @@ a {
 
 .notes ul, .notes ol {
   padding-left: 20px;
+}
+
+.highlight-text {
+  font-weight: 700;
+}
+
+ul li {
+  list-style-type: disc;
+}
+
+ul li li {
+  list-style-type: circle;
+}
+
+ol li {
+  list-style-type: values;
+}
+
+ol li li {
+  list-style-type: lower-alpha ;
 }
