@@ -76,7 +76,7 @@ h3.menu{
   padding: 10px 16px;
   border-bottom: 2px solid #ebcfcf;
   background-color: #f3ebeb;
-  margin: 5px;
+  margin-top: 4px;
   
 }
 
@@ -85,3 +85,19 @@ h4.main_menu {
   text-align: center;
   font-size: 125%;
 }
+
+#recipes {
+  width: 100%;
+  font-size: 18px;
+  padding: 0px;
+  border: 0px solid #ddd;
+}
+
+#recipes_search {
+  width: 100%;
+  font-size: 18px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  
+}
+
