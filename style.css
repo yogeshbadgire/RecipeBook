@@ -32,6 +32,8 @@ a {
   color: black;
   font-weight: 500;
   line-height: 1.5;
+  display: block;
+  padding: 5px;
 }
 
 .notes {
