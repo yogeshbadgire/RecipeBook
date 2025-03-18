@@ -70,3 +70,18 @@ h3.menu{
   font-weight: 600;
   text-align: right;
 }
+
+.main_menu li{
+  list-style-type: none;
+  padding: 10px 16px;
+  border-bottom: 2px solid #ebcfcf;
+  background-color: #f3ebeb;
+  margin: 5px;
+  
+}
+
+h4 {
+  font-weight: 600;
+  text-align: center;
+  font-size: 125%;
+}
