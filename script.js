@@ -19,3 +19,14 @@ function myFunction() {
     }
   }
 }
+
+function updateRecipe() {
+        
+  const servings = parseFloat(document.getElementById('servings').value);
+  var cuID;
+  for(let i = 1; i <= 50; i++) {
+      cuID = "ing"+i;
+      const qty = parseFloat(document.getElementById(cuID).getAttribute('value'));        
+      document.getElementById(cuID).innerHTML = qty*servings; 
+  }        
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+
+    <title>Veg Pulao Recipe</title>
+    
+    
+</head>
+
+<body>
+    <h3 class="menu"><a href="index.html">< MENU</a></h3>
+    <h1>Veg Pulao Recipe</h1>
+    <div class="input-wrapper">
+      <label for="servings">Servings</label>
+      <input type="number" id="servings" min = "1" value="2">
+      <button onclick="updateRecipe()">Update Recipe</button>
+    <br><br>
+    </div>
+    <div class="recipe">
+        <div class="ingredients">
+            <h4>Ingredients</h4>
+            <ul>
+                <li>Rice - <span id="ing1" value="0.5">1</span> cup</li>      
+                <li>Water - <span id="ing2" value="1">2</span> cups</li>
+                <li>Salt - To taste</li>
+                <li>Ghee - <span id="ing3" value="1">2</span> TBSP</li>
+                <li>Onion - <span id="ing4" value="0.5">1</span> medium-sized (thinly sliced)</li>
+                <li>Green Chillies - <span id="ing5" value="1">2</span></li>
+                <li><span class="highlight-text">Vegetables - <span id="ing6" value="0.5">1</span> cup </span>
+                <ul>
+                   <li>Potato</li>
+                    <li>Beans</li>
+                    <li>Carrots</li>
+                    <li>Green Peas</li> 
+                </ul>                   
+                </li>   
+                <li>Ginger Garlic Paste - <span id="ing7" value="0.5">1</span> TSP</li>
+                <li><span class="highlight-text">Masala Mix 1</span></li>
+                <ul>
+                    <li>Bay leaf - <span id="ing8" value="0.5">1</span></li>
+                    <li>Star Anise - <span id="ing9" value="0.5">1</span></li>
+                    <li>Mace - <span id="ing10" value="0.5">1</span> long strand</li>
+                    <li>Cumin - <span id="ing11" value="0.5">1</span> TSP</li>
+                    <li>Green Cardamom - <span id="ing12" value="1.5">3</span></li>
+                    <li>Cloves - <span id="ing13" value="2">4</span></li>
+                    <li>Cinnamon - <span id="ing14" value="0.5">1</span> inch</li>
+                </ul>
+            </ul>
+        </div>
+        <div class="instructions">
+            <h4>Instructions</h4>
+            <ol>
+                <li>Wash the rice until water runs clear.</li>
+                <li>Soak for 15 mins and drain.</li>
+                <li>Heat ghee in a cooker.</li>
+                <li>Add <span class="highlight-text">masala mix 1</span>  & sauté.</li>
+                <li>Add ginger garlic paste & sauté.</li>
+                <li>Add veggies & sauté for 2-3 mins.</li>
+                <li>Add water & salt.</li>
+                <li>Bring to boil.</li>
+                <li>Add rice & stir.</li>
+                <li>Cover the cooker & cook for 1 whistle (medium flame).</li>
+                <li>Let the cooker depressurize naturally.</li>
+                <li>Veg pulao is ready.</li>
+            </ol>
+        </div>
+        <hr>
+        <div class="ingredients">
+          <h3>Boondi Raita Recipe</h3>
+          <h4>Ingredients</h4>
+          <ul>
+              <li>Curd - <span id="ing15" value="125">250</span> grams</li>
+              <li>Sugar - <span id="ing16" value="20">40</span> grams</li>
+              <li>Water - <span id="ing17" value="50">100</span> grams</li>
+              <li>Salt - To taste</li>
+              <li>Black Salt - To taste</li>
+              <li>Cumin Powder - <span id="ing18" value="0.125">0.25</span> TSP</li>
+              <li>Red Chilli Powder - <span id="ing19" value="0.125">0.25</span> TSP</li>
+              <li>Boondi - As per preference (soaked in warm water for 5 minutes)</li>
+          </ul>
+      </div>
+      <div class="instructions">
+        <h4>Instructions</h4>
+        <ol>
+            <li>Mix all the ingredients well.</li>
+            <li>Add soaked boondi.</li>
+        </ol>
+    </div>
+    </div>
+</body>
+</html>
