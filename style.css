@@ -159,3 +159,17 @@ h4.main_menu {
   font-size: 18px;
 }
 
+.input-wrapper select {
+  padding-right: 10px;
+  font-family: Epilogue;
+  font-weight: 400;
+  font-size: 18px;
+  background-color: #f3ebeb;
+  border:none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding-left: 15px;
+  width: 65px;
+  height: 35px;
+}
+

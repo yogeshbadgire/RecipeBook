@@ -15,21 +15,24 @@
     
 </head>
 
-<body>
+<body onload="servingsList()">
     <h3 class="menu"><a href="index.html">< MENU</a></h3>
     <h1>Veg Pulao Recipe</h1>
     <div class="input-wrapper">
-      <label for="servings">Servings</label>
-      <input type="number" id="servings" min = "1" value="2">
-      <button onclick="updateRecipe()">Update Recipe</button>
+      <label for="servings">Servings : </label>
+      <select id="servings" onchange="updateRecipe()" value="2">
+        <option>1</option>
+        <option selected>2</option>
+      </select>
+      <!--<button onclick="updateRecipe()">Update Recipe</button> -->
     <br><br>
     </div>
     <div class="recipe">
         <div class="ingredients">
             <h4>Ingredients</h4>
             <ul>
-                <li>Rice - <span id="ing1" value="0.5">1</span> cup</li>      
-                <li>Water - <span id="ing2" value="1">2</span> cups</li>
+                <li>Basmati Rice - <span id="ing1" value="100">200</span> grams</li>      
+                <li>Water - <span id="ing2" value="237.5">475</span> grams</li>
                 <li>Salt - To taste</li>
                 <li>Ghee - <span id="ing3" value="1">2</span> TBSP</li>
                 <li>Onion - <span id="ing4" value="0.5">1</span> medium-sized (thinly sliced)</li>
@@ -63,7 +66,7 @@
                 <li>Heat ghee in a cooker.</li>
                 <li>Add <span class="highlight-text">masala mix 1</span>  & sauté.</li>
                 <li>Add ginger garlic paste & sauté.</li>
-                <li>Add veggies & sauté for 2-3 mins.</li>
+                <li>Add veggies, onions, green chillies & sauté for 2-3 mins.</li>
                 <li>Add water & salt.</li>
                 <li>Bring to boil.</li>
                 <li>Add rice & stir.</li>
@@ -82,8 +85,8 @@
               <li>Water - <span id="ing17" value="50">100</span> grams</li>
               <li>Salt - To taste</li>
               <li>Black Salt - To taste</li>
-              <li>Cumin Powder - <span id="ing18" value="0.125">0.25</span> TSP</li>
-              <li>Red Chilli Powder - <span id="ing19" value="0.125">0.25</span> TSP</li>
+              <li>Cumin Powder - <span id="ing18" value="0.125">1/4</span> TSP</li>
+              <li>Red Chilli Powder - <span id="ing19" value="0.125">1/4</span> TSP</li>
               <li>Boondi - As per preference (soaked in warm water for 5 minutes)</li>
           </ul>
       </div>
