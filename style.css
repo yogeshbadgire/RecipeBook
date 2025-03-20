@@ -171,5 +171,6 @@ h4.main_menu {
   padding-left: 15px;
   width: 65px;
   height: 35px;
+  max-width: 30%;
 }
 
