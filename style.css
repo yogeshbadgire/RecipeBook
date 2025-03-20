@@ -168,9 +168,9 @@ h4.main_menu {
   border:none;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  padding-left: 15px;
   width: 65px;
   height: 35px;
   max-width: 30%;
+  text-aling: center;
 }
 
