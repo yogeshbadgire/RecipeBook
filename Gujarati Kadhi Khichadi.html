@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Gujarati Kadhi Khichadi</title>   
+</head>
+
+<body onload="servingsList()">
+    <h3 class="menu"><a href="index.html">< MENU</a></h3>
+    <h1>Gujarati Kadhi Khichadi</h1>
+    <div class="input-wrapper">
+      <label for="servings">Servings : </label>
+      <select id="servings" onchange="updateRecipe()" value="2">
+            <option>1</option>
+            <option selected>2</option>
+      </select>
+      <!--<button onclick="updateRecipe()">Update Recipe</button> -->
+      <br><br>
+    </div>
+    <div class="recipe">
+        <div class="ingredients">
+            <h3>Khichadi Recipe</h3>
+            <h4>Ingredients</h4>
+            <ul>
+                <li>Rice - <span id="ing1" value="40">80</span> grams</li>
+                <li>Green moong dal - <span id="ing2" value="40">80</span> grams</li>
+                <li>Ghee - <span id="ing3" value="0.5">1</span> TBSP</li>
+                <li>Cumin Seeds - <span id="ing4" value="0.25">1/2</span> TSP</li>
+                <li>Hing - <span id="ing5" value="40">1/2</span> TSP</li>
+                <li>Water - <span id="ing6" value="425">850</span> grams</li>
+                <li>Salt to taste</li>
+                <li>Turmeric Powder - <span id="ing7" value="0.125">1/4</span> TSP</li>
+            </ul>
+        </div>
+        <div class="instructions">
+            <h4>Instructions</h4>
+            <ol>
+                <li>Wash the rice and dal together until the water runs clear.</li>
+                <li>Soak for 20-25 mins.</li>
+                <ul><li>Meanwhile, get the kadhi ready.</li></ul>
+                <li>Once soaked, discard the water.</li>
+                <li>Set pressure cooker on high heat & add ghee, cumin seeds, and Hing. Let the cumin seeds crackle.</li>
+                <li>Add soaked rice & dal.</li>
+                <li>Stir well & cook for 1-2 mins.</li>
+                <li>Add water, salt, and turmeric powder.</li>
+                <li>Stir well and bring to boil.</li>
+                <li>Remove the froth 2-3 times.</li>
+                <li>Place the lid and pressure cook for 3 whistles on medium high flame.</li>
+                <li>Let the pressure cooker de-pressurize naturally.</li>
+                <li>Khichadi is ready.</li>
+            </ol>
+        </div>
+        <hr>
+        <div class="ingredients">
+          <h3>Kadhi Recipe</h3>
+          <h4>Ingredients</h4>
+          <ul>
+              <li>Curd - <span id="ing8" value="67.5">135</span> grams</li>
+              <li>Besan - <span id="ing9" value="7.5">15</span> grams</li>
+              <li>Ginger chilli paste - <span id="ing10" value="0.5">1</span> inch ginger & <span id="ing11" value="0.5">1</span> green chilli</li>
+              <li>Salt to taste</li>
+              <li>Water - <span id="ing12" value="180">360</span> grams</li>
+              <li>Cumin Seeds - <span id="ing13" value="0.125">1/4</span> TSP</li>
+              <li>Mustard Seeds - <span id="ing14" value="0.125">1/4</span> TSP</li>
+              <li class="highlight-text"><i>Whole Spices Mix</i></li>
+              <ul>
+                <li>Cinnamon - <span id="ing15" value="0.25">0.5</span> inch</li>
+                <li>Cloves - <span id="ing16" value="2">4</span> Nos.</li>
+                <li>Red Chillies - <span id="ing17" value="1">2</span> Nos.</li>
+                <li>Hing - <span id="ing18" value="0.125">1/4</span> TSP</li>
+                <li>Curry Leaves - <span id="ing19" value="3">6</span></li>
+                <li>Methi Seeds - <span id="ing20" value="0.0625">1/8</span> TSP</li>
+              </ul>
+              <li>Sugar - <span id="ing21" value="17.5">35</span> grams</li>
+          </ul>
+      </div>
+      <div class="instructions">
+        <h4>Instructions</h4>
+        <ol>
+            <li>Get a bowl.</li>
+            <li>Add curd, besan, ginger chilli paste & salt.</li>
+            <li>Whisk it to make a smooth paste.</li>
+            <li>Add water & whisk to make a liquidy batter.</li>
+            <li>Heat ghee in a kadhai.</li>
+            <li>Add cumin seeds & mustard seeds and let crackle.</li>
+            <li>Add the <span class="highlight-text">whole spices mix.</span> </style></li>
+            <li>Once spices crackle, pour the batter and bring it to boil.</li>
+            <li>Add salt & sugar.</li>
+            <li>Let it boil until desired consistency is obtained.</li>
+            <li>Kadhi is ready.</li>
+        </ol>
+    </div>
+    </div>
+</body>
+</html>
