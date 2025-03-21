@@ -2,35 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-
-    <title>Gujarati Kadhi Khichadi</title>
-    
-    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Veg Pulao Recipe</title>   
 </head>
 
-<body>
+<body onload="servingsList()">
     <h3 class="menu"><a href="index.html">< MENU</a></h3>
-    <h1>Gujarati Kadhi Khichadi</h1>
-    <h3>(Serves 2)</h3>
+    <h1>Veg Pulao Recipe</h1>
+    <div class="input-wrapper">
+      <label for="servings">Servings : </label>
+      <select id="servings" onchange="updateRecipe()" value="2">
+            <option>1</option>
+            <option selected>2</option>
+      </select>
+      <!--<button onclick="updateRecipe()">Update Recipe</button> -->
+      <br><br>
+    </div>
     <div class="recipe">
         <div class="ingredients">
             <h3>Khichadi Recipe</h3>
             <h4>Ingredients</h4>
             <ul>
-                <li>Rice - 80 grams</li>
-                <li>Green moong dal - 80 grams</li>
-                <li>Ghee - 1 TBSP</li>
-                <li>Cumin Seeds - 1/2 TSP</li>
-                <li>Hing - 1/2 TSP</li>
-                <li>Water - 850 grams</li>
+                <li>Rice - <span id="ing1" value="40">80</span> grams</li>
+                <li>Green moong dal - <span id="ing2" value="40">80</span> grams</li>
+                <li>Ghee - <span id="ing3" value="0.5">1</span> TBSP</li>
+                <li>Cumin Seeds - <span id="ing4" value="0.25">1/2</span> TSP</li>
+                <li>Hing - <span id="ing5" value="40">1/2</span> TSP</li>
+                <li>Water - <span id="ing6" value="425">850</span> grams</li>
                 <li>Salt to taste</li>
-                <li>Turmeric Powder - 1/4 TSP</li>
+                <li>Turmeric Powder - <span id="ing7" value="0.125">1/4</span> TSP</li>
             </ul>
         </div>
         <div class="instructions">
@@ -56,23 +61,23 @@
           <h3>Kadhi Recipe</h3>
           <h4>Ingredients</h4>
           <ul>
-              <li>Curd - 135 grams</li>
-              <li>Besan - 15 grams</li>
-              <li>Ginger chilli paste - 1 inch ginger & 1 green chilli</li>
+              <li>Curd - <span id="ing8" value="67.5">135</span> grams</li>
+              <li>Besan - <span id="ing9" value="7.5">15</span> grams</li>
+              <li>Ginger chilli paste - <span id="ing10" value="0.5">1</span> inch ginger & <span id="ing11" value="0.5">1</span> green chilli</li>
               <li>Salt to taste</li>
-              <li>Water - 360 grams</li>
-              <li>Cumin Seeds - 1/4 TSP</li>
-              <li>Mustard Seeds - 1/4 TSP</li>
+              <li>Water - <span id="ing12" value="180">360</span> grams</li>
+              <li>Cumin Seeds - <span id="ing13" value="0.125">1/4</span> TSP</li>
+              <li>Mustard Seeds - <span id="ing14" value="0.125">1/4</span> TSP</li>
               <li class="highlight-text"><i>Whole Spices Mix</i></li>
               <ul>
-                <li>Cinnamon - 1/2 inch</li>
-                <li>Cloves - 4 Nos.</li>
-                <li>Red Chillies - 2 Nos.</li>
-                <li>Hing - 1/4 TSP</li>
-                <li>Curry Leaves - 5-6</li>
-                <li>Methi Seeds - 1/8 TSP</li>
+                <li>Cinnamon - <span id="ing15" value="0.25">0.5</span> inch</li>
+                <li>Cloves - <span id="ing16" value="2">4</span> Nos.</li>
+                <li>Red Chillies - <span id="ing17" value="1">2</span> Nos.</li>
+                <li>Hing - <span id="ing18" value="0.125">1/4</span> TSP</li>
+                <li>Curry Leaves - <span id="ing19" value="3">6</span></li>
+                <li>Methi Seeds - <span id="ing20" value="0.0625">1/8</span> TSP</li>
               </ul>
-              <li>Sugar - 35 grams</li>
+              <li>Sugar - <span id="ing21" value="17.5">35</span> grams</li>
           </ul>
       </div>
       <div class="instructions">

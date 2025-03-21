@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Chhole for Chaat</title>
+</head>
+
+<body onload="servingsList()">
+    <h3 class="menu"><a href="index.html">< MENU</a></h3>
+    <h1>Chhole for Chaat</h1>
+    <div class="input-wrapper">
+        <label for="servings">Servings : </label>
+        <select id="servings" onchange="updateRecipe()" value="2">
+          <option>1</option>
+          <option selected>2</option>
+        </select>
+        <!--<button onclick="updateRecipe()">Update Recipe</button> -->
+        <br><br>
+    </div>
+    <div class="recipe">
+        <div class="ingredients">
+            
+            <h4>Ingredients</h4>
+            <ul>
+                <li>Kabuli Chana - <span id = "ing1" value="62.5">125</span> grams</li>
+                <li>Black Cardamom - <span id = "ing2" value="0.5">1</span> </li>
+                <li>Bay Leaves - <span id = "ing3" value="1">2</span> </li>
+                <li>Cloves - <span id = "ing4" value="1.5">3</span> </li>
+                <li>Baking Soda  - <span id = "ing5" value="0.5">1</span> Large pinch</li>
+                <li>Coriander - <span id = "ing6" value="0"></span> Preference</li>
+                <li>Salt - <span id = "ing7" value="0"></span> To taste</li>
+                <li>Ginger Chilli Paste - <span id = "ing8" value="0"></span> </li>
+                <li>Green Chillies - <span id = "ing9" value="1">2</span> </li>
+                <li>Ginger - <span id = "ing10" value="0.5">1</span> inch</li>
+                <li>Salt - <span id = "ing11" value="0"></span> To taste</li>
+                <li>Ghee - <span id = "ing12" value="0.5">1</span> TBSP</li>
+                <li>Cumin Seeds - <span id = "ing13" value="0"></span> A large pinch</li>
+                <li>Hing - <span id = "ing14" value="22874">1/4</span> TSP</li>
+                <li><span class = "highlight-text">Masala Mix 1 - </span> <span id = "ing15" value="0"></span> </li>
+                <ul>
+                    <li>Black Salt - <span id = "ing16" value="0.5">1</span> TSP</li>
+                    <li>Red Chilli Powder - <span id = "ing17" value="0.5">1</span> TSP</li>
+                    <li>Yellow Chilli Powder - <span id = "ing18" value="0.5">1</span> TSP</li>
+                    <li>Coriander Powder - <span id = "ing19" value="0.25">0.5</span> TBSP</li>
+                    <li>Garam Masala - <span id = "ing20" value="0.5">1</span> TSP</li>
+                </ul>
+                
+                <li>Tamarind Water - <span id = "ing21" value="0.5">1</span> lemon sized ball</li>
+                <li>Ginger - <span id = "ing22" value="0.5">1</span> inch</li>
+                <li>Kasuri Methi - <span id = "ing23" value="0.5">1</span> pinch (roasted and crushed)</li>
+                <li>Coriander - <span id = "ing24" value="0"></span> As per preference</li>
+
+            </ul>
+        </div>
+        <div class="instructions">
+            <h4>Instructions</h4>
+            <ol>
+                <li>Soak chana for 7-8 hours OR overnight.</li>
+                <li>Discard the water.</li>  
+                <li>Take mortar and pestle and add green chillies, ginger, and salt and make paste.</li>      
+                <li>Take pressure cooker and add soaked chana, black cardamom, bay leaves, cloves, baking soda, salt.</li>
+                <li>Add water 1 inch above the chana.</li>
+                <li>Turn on the stove on high flame for first whistle and then keep on medium flame for next 4-5 whistles.</li>
+                <li>Turn off the gas and let the cooker depressurize naturally.</li>
+                <li>Take out the cardamom and bay leaves and discard.</li>                
+                <li>Take kadai and add ghee.</li>
+                <li>Add cumin seeds and let crackle.</li>
+                <li>Add hing and <span class="highlight-text">ginger chilli paste</span> and cook for a minute.</li>
+                <li>Add cooked chhole, <span class="highlight-text">masala mix 1</span> , tamarind water and stir well.</li>
+                <li>Cook for 7-8 minutes</li>
+                <li>Mash some chhole to make thick consistency.</li>
+                <li>Add ginger, kasuri methi, and coriander.</li>
+                <li>Chhole are ready.</li>
+            </ol>
+        </div>   
+    </div>
+</body>
+</html>

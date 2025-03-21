@@ -29,6 +29,9 @@ function updateRecipe() {
       const qty = parseFloat(document.getElementById(cuID).getAttribute('value'));        
       var result = qty*servings;
       switch(result) {
+        case 0:
+            result = "";
+            break;
         case 0.0625:
             result = "1/16";
             break;
