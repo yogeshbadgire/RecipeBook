@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Kolhapuri Misal</title>
+</head>
+
+<body onload="servingsList(); updateRecipe();">
+    <h3 class="menu"><a href="index.html">< MENU</a></h3>
+    <h1>Kolhapuri Misal</h1>
+    <div class="input-wrapper">
+        <label for="servings">Servings : </label>
+        <select id="servings" onchange="updateRecipe()" value="2">
+          <option>1</option>
+          <option selected>2</option>
+        </select>
+        <br><br>
+    </div>
+    <div class="recipe">
+        <div class="ingredients">
+            
+            <h4>Ingredients</h4>
+            <h5>Vatan</h5>
+            <ul>
+              <li>Oil - <span id = "ing1" value="1">2</span> TBSP</li>
+              <li class="highlight-text">Masala Mix 1</li>
+              <ul>
+                <li>Cumin Seeds - <span id = "ing2" value="0.5">1</span> TBSP</li>
+                <li>Shahjeera - <span id = "ing3" value="0.5">1</span> TSP</li>
+                <li>Coriander Seeds - <span id = "ing4" value="0.5">1</span> TBSP</li>
+                <li>Cinnamon - <span id = "ing5" value="0.25">0.5</span> inch</li>
+                <li>Green Cardamom - <span id = "ing6" value="1">2</span> </li>
+                <li>Black Cardamom - <span id = "ing7" value="0.5">1</span> </li>
+                <li>Black Peppercors - <span id = "ing8" value="0.5">1</span> TSP</li>
+                <li>Cloves - <span id = "ing9" value="2">4</span> </li>
+              </ul>              
+              <li class="highlight-text">Mix Number 2</li>
+              <ul>
+                <li>Ginger - <span id = "ing10" value="0.25">0.5</span> inch</li>
+                <li>Garlic - <span id = "ing11" value="5">10</span> pieces</li>
+                <li>White Sesame Seeds - <span id = "ing12" value="0.5">1</span> TBSP</li>
+                <li>Khuskhus - <span id = "ing13" value="0.5">1</span> TBSP</li>
+              </ul>              
+              <li>Onions - <span id = "ing14" value="1">2</span> medium-sized</li>
+              <li>Dry Coconut - <span id = "ing15" value="0.25">0.5</span> pieces</li>
+              <li>Fresh Grated Coconut - <span id = "ing16" value="0.125">0.25</span> cup</li>            
+            </ul>
+            <hr class="dashed">
+
+            <h5>Matki Preparation</h5>
+            <ul>
+              <li>Matki - <span id = "ing17" value="30">60</span> grams (Dry)</li>
+              <li>Turmeric Powder - <span id = "ing18" value="0.125">0.25</span> TSP</li>
+              <li>Salt - <span id = "ing19" value="0"></span> To taste</li>
+              <li>Water - <span id = "ing20" value="500"></span> grams</li>            
+            </ul>
+            <hr class="dashed">
+
+            <h5>Tarri Preparation</h5>
+            <ul>
+              <li>Oil - <span id = "ing21" value="0.25">0.5</span> cup</li>
+              <li>Onion - <span id = "ing22" value="0.5">1</span> big-sized</li>
+              <li class = "highlight-text">Masala Mix 3</li>
+              <ul>
+                <li>Kanda Lasun Masala - <span id = "ing23" value="1.5">3</span> TBSP</li>
+                <li>Kashmiri Red Chilli Powder - <span id = "ing24" value="0.75">1.5</span> TBSP</li>
+                <li>Turmeric Powder - <span id = "ing25" value="0.25">0.5</span> TSP</li>
+              </ul>              
+            </ul>
+            <hr class="dashed">
+
+            <h5>Matki Usal</h5>
+            <ul>
+              <li>Oil - <span id = "ing26" value="0.5">1</span> TBSP</li>
+              <li>Mustard Seeds - <span id = "ing27" value="0.5">1</span> TSP</li>
+              <li>Green Chillies - <span id = "ing28" value="1">2</span> </li>
+              <li>Matki - <span id = "ing29" value="0"></span> Cooked</li>
+              <li class = "highlight-text">Masala Mix 4</li>
+              <ul>
+                <li>Turmeric Powder - <span id = "ing30" value="0.25">0.5</span> TSP</li>
+                <li>Kashmiri Red Chilli Powder - <span id = "ing31" value="0.5">1</span> TSP</li>
+                <li>Kandha Lasun Masala - <span id = "ing32" value="0.5">1</span> TBSP</li>
+                <li>Salt - <span id = "ing33" value="0"></span> To Taste</li>
+              </ul>              
+              <li>Fresh Coriander - <span id = "ing34" value="0.5">1</span> handful</li>
+            </ul>
+        </div>
+        <hr class="dashed">
+        <div class="instructions">
+            <h4>Instructions</h4>
+            <h5>Vatan</h5>
+            <ol>
+              <li>Take a pan and add oil.</li>
+              <li>Once the oil is medium hot, add <span class="highlight-text">Masala Mix 1</span> and cook for a few seconds.</li>
+              <li>Add <span class="highlight-text">Mix Number 2 </span> and cook for a minute on very low flame.</li>
+              <li>Transfer this mixture to a bowl and let it cool.</li>
+              <li>Take onions and make crosscuts (not completely through) without removing skin.</li>
+              <li>Put a jali on stove and put onions and dry coconut directly on the the jali.</li>
+              <li>Now let the dry coconut and onions blacken completely.</li>
+              <li>When it cools down, cut into smaller pieces.</li>
+              <li>Take a mixer jar and add cooked masala,  dry coconut, cooked onions, fresh grated coconut, and a little water.</li>
+              <li>Make the finest paste possible.</li>
+              <li>Vatan is ready.</li>              
+            </ol>
+            <hr class="dashed">
+
+            <h5>Matki</h5>
+            <ol>
+              <li>Take a pressure cooker and add sprouted matki, turmeric powder, salt, and water.</li>
+              <li>Pressure cook for just 1 whistle.</li>
+              <li>Strain the matki and save the water which will be used while making misal.</li>
+            </ol>
+            <hr class="dashed">
+
+            <h5>Tarri</h5>
+            <ol>
+              <li>Take a large pan and add oil.</li>
+              <li>Once the oil is hot, add chopped onion and cook for atleast 5-6 minutes o medium flame.</li>
+              <li>Add <span class="highlight-text">Masala Mix 3 </span> and cook for 2 minutes while stirring continously.</li>
+              <li>Add blended vatan and cook until the oil separates. This process takes minimum 10 minutes. If you feel the masala is getting dry, add a little water and continue cooking.</li>
+              <li>When the oil is separated, add the water in which matki was cooked.</li>
+              <li>Now cook for 20-25 minutes on low flame.</li>
+              <li>Add fresh coriander.</li>
+              <li>Tarri is ready.</li>
+            </ol>
+            <hr class="dashed">
+
+            <h5>Matki Usal</h5>
+            <ol>
+              <li>Take a pan and add oil.</li>
+              <li>Add mustard seeds and chopped green chilli and let the mustard seeeds crackle.</li>
+              <li>Add cooked matki, <span class="highlight-text">Masala Mix 4</span> and cook for 5-6 minutes.</li>
+              <li>Add fresh coriander.</li>
+              <li>Matki Usal is ready.</li>
+            </ol>
+            <hr class="dashed">
+
+            <h5>Misal</h5>
+            <ol>
+              <li>Take bowl and add matki usal, tarri, and farsan.</li>
+              <li>Garnish with onions and lemon.</li>
+              <li>Misal is ready.</li>
+            </ol>
+        </div>     
+    </div>
+    <div class="notes">
+        <h4>Notes:</h4>
+        <ul>
+          <li>Update after 22-Mar-2025.</li>
+        </ul>
+      </div>
+</body>
+</html>
