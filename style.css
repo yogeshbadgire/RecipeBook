@@ -13,6 +13,66 @@
   
   
 }
+
+table {
+  margin: auto;
+  font-family: Epilogue;
+  font-weight: 400;
+  font-size:x-large;
+  text-align: center;
+  width: 300px;
+}
+
+td {
+  margin: auto;
+  font-family: Epilogue;
+  font-weight: 400;
+  font-size:x-large;
+  text-align: center;
+  width: 300px;
+  border: 1px solid #c98a8a;
+}
+
+.roti {
+  margin:auto;
+  font-family: Epilogue;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: auto;
+}
+.roti label {
+  font-family: Epilogue;
+  font-weight: 500;
+  font-size: 18px;
+}
+.roti select {
+  padding-right: 10px;
+  margin-left: 5px;
+  font-family: Epilogue;
+  font-weight: 400;
+  font-size: 18px;
+  background-color: #f3ebeb;
+  border:none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 65px;
+  height: 35px;
+  max-width: 20%;
+  text-align: center;
+
+}
+
+th {
+  margin: auto;
+  font-family: Epilogue;
+  font-weight: 400;
+  font-size:x-large;
+  text-align: center;
+  width: 300px;
+  background-color: #c98a8a;
+  color: white;
+  border: 1px solid #c98a8a;
+}
 h1 {
   color: #333333;
   line-height: 1.1;

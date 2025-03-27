@@ -93,3 +93,14 @@ function servingsList() {
       selectElement.add(option);
     }
   }
+
+  function updateRecipeForRoti() {
+    const servings = parseFloat(document.getElementById('servings').value);
+    var cuID;
+    for(let i = 1; i <= 50; i++) {
+        cuID = "ing"+i;
+        const qty = parseFloat(document.getElementById(cuID).getAttribute('value'));        
+        var result = qty*servings;        
+        document.getElementById(cuID).innerHTML = Math.round(result);
+    }
+  }
