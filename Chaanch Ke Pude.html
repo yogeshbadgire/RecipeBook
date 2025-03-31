@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Chaanch Ke Pude</title>
+</head>
+
+<body onload="servingsList(); updateRecipe();">
+    <h3 class="menu"><a href="index.html">< MENU</a></h3>
+    <h1>Chaanch Ke Pude</h1>
+    <div class="input-wrapper">
+        <label for="servings">Servings : </label>
+        <select id="servings" onchange="updateRecipe()" value="2">
+          <option>1</option>
+          <option selected>2</option>
+        </select>
+        <!--<button onclick="updateRecipe()">Update Recipe</button> -->
+        <br><br>
+    </div>
+    <div class="recipe">
+        <div class="ingredients">
+            <h4>Ingredients</h4>
+            <ul>
+                <li>Dahi - <span id="ing1" value="100"></span> grams</li>    
+                <li>Water - <span id="ing2" value="200"></span> grams</li>
+                <li>Wheat Flour - <span id="ing3" value="100"></span> grams</li>
+                <li>Garlic - <span id="ing4" value="10"></span> grams (make a paste)</li>
+                <li>Homemade Thecha - <span id="ing5" value="0.5"></span> TSP</li>
+                <li>Salt - To Taste</li>
+                <li>Lemon Juice - <span id="ing6" value = "1"></span>-<span id="ing7" value="2"></span> drops</li>
+            </ul>
+        </div>
+        <div class="instructions">
+            <h4>Instructions</h4>
+            <ol>
+                <li>Make the buttermilk.</li>
+                <li>In a bowl, take flour, buttermilk, garlic paste, and homemade thecha and mix with a whisk until a smooth batter is formed.</li>
+                <li>Make the pude on a pan.</li>
+            </ol>
+        </div>     
+    </div>
+    <div class="notes">
+        <h4>Notes:</h4>
+        <ul>
+          <li>Make the buttermilk in batches if your mixer grinder jar is not big enough.</li>
+        </ul>
+      </div>
+</body>
+</html>

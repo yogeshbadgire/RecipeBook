@@ -23,27 +23,28 @@
     <li><a href="Ukadiche Modak.html">Ukadiche Modak Recipe</a></li>
     <li><a href="Kolhapuri Misal.html">Kolhapuri Misal Recipe</a></li>
     <li><a href="Phulka Measurements.html">Phulka Measurement</a></li>
+    <li><a href="Chaanch Ke Pude.html">Chaanch Ke Pude</a></li>
+    <li><a href="Dal Baati.html">Dal Baati</a></li>
   </ul>
-  <script>
-    const list = document.getElementById("recipes");
-const listItems = list.getElementsByTagName("li");
-const itemsArray = Array.from(listItems);
+<script>
+  const list = document.getElementById("recipes");
+  const listItems = list.getElementsByTagName("li");
+  const itemsArray = Array.from(listItems);
 
-itemsArray.sort((a, b) => {
-  const textA = a.textContent.toLowerCase();
-  const textB = b.textContent.toLowerCase();
-  if (textA < textB) return -1;
-  if (textA > textB) return 1;
-  return 0;
-});
+  itemsArray.sort((a,b) => {
+    const textA = a.textContent.toLowerCase();
+    const textB = b.textContent.toLowerCase();
+    if (textA < textB) return -1;
+    if (textA > textB) return 1;
+    return 0;
+  });
 
-list.innerHTML = "";
+  list.innerHTML = "";
 
-itemsArray.forEach(item => {
+  itemsArray.forEach(item => {
   list.appendChild(item);
-});
-  </script>
- 
+  });
+</script> 
 </body>
 </html>
 

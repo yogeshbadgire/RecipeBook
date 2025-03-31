@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Dal Baati (Fried)</title>
+</head>
+
+<body onload="servingsList(); updateRecipe();">
+    <h3 class="menu"><a href="index.html">< MENU</a></h3>
+    <h1>Dal Baati (Fried)</h1>
+    <div class="input-wrapper">
+        <label for="servings">Servings : </label>
+        <select id="servings" onchange="updateRecipe()" value="2">
+          <option>1</option>
+          <option selected>2</option>
+        </select>
+        <!--<button onclick="updateRecipe()">Update Recipe</button> -->
+        <br><br>
+    </div>
+    <div class="recipe">
+        <div class="ingredients">
+            <h4>Ingredients</h4>
+            <h5>Baati</h5>
+            <ul>
+              <li>Baati Flour - <span id = "ing1" value="150"></span> grams</li>
+              <li>Oil - <span id = "ing2" value="5"></span> grams</li>
+              <li>Ajwain - <span id = "ing3" value="0.5"></span> TSP</li>
+              <li>Salt - <span id = "ing4" value="0.5"></span> TSP</li>
+              <li>Baking Soda - <span id = "ing5" value="0.125"></span> TSP</li>
+              <li>Water - <span id = "ing6" value="75"></span> grams</li>                  
+            </ul>
+            <hr class="dashed">
+            <h5>Dal</h5>
+            <ul>
+              <li>Yet to be measured because I don't make it. &#128530;</li>
+            </ul>
+        </div>
+        <div class="instructions">
+            <h4>Instructions</h4>
+            <h5>Baati</h5>
+            <ol>
+                <li>Mix all the ingredients and make a dough.</li>
+                <li>Keep it aside and covered for half an hour.</li>
+                <li>Make small balls of the dough each weighing around 120 grams. </li>
+                <li>Take each ball and separate a small amount of the dough.</li>
+                <li>Make a small ball of the separated portion and oil it a little bit.</li>
+                <li>Now place the small ball inside the remaining portion of the dough and seal it.</li>
+                <li>Shape them like a solid donut and steam them for 25 minutes.</li>
+                <li>Let them cool and then cut each ball into 4 small pieces.</li>
+                <li>Fry them in batches until brown.</li>
+            </ol>
+        </div>     
+    </div>
+    <div class="notes">
+        <h4>Notes:</h4>
+        <ul>
+          <li>Notes here..</li>
+        </ul>
+      </div>
+</body>
+</html>
