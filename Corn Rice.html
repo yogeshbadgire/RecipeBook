@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Corn Rice and Raita</title>
+</head>
+
+<body onload="servingsList(); updateRecipe();">
+    <h3 class="menu"><a href="index.html">< MENU</a></h3>
+    <h1>Corn Rice and Raita</h1>
+    <div class="input-wrapper">
+        <label for="servings">Servings : </label>
+        <select id="servings" onchange="updateRecipe()" value="2">
+          <option>1</option>
+          <option selected>2</option>
+        </select>
+        <!--<button onclick="updateRecipe()">Update Recipe</button> -->
+        <br><br>
+    </div>
+    <div class="recipe">
+        <div class="ingredients">
+            <h4>Corn Rice</h4>
+            <h4>Ingredients</h4>
+            <ul>
+              <li>Basmati Rice - <span id = "ing1" value="112.5"></span> grams</li>
+              <li>Water - <span id = "ing2" value="250"></span> grams</li>
+              <li>Corn - <span id = "ing3" value="0.375"></span> cup (boiled)</li>
+              <li>Cumin - <span id = "ing4" value="0.5"></span> TSP</li>
+              <li>Cloves - <span id = "ing5" value="1"></span> </li>
+              <li>Cinnamon - <span id = "ing6" value="0.5"></span> inch</li>
+              <li>Onion - <span id = "ing7" value="0.5"></span> medium-sized & sliced</li>
+              <li>Ginger Garlic Paste - <span id = "ing8" value="0.5"></span> TSP</li>
+              <li class="highlight-text">Masala Mix 1</li>
+              <ul>
+                <li>Red Chilli Powder - <span id = "ing9" value="0.25"></span> TSP</li>
+                <li>Turmeric Powder - <span id = "ing10" value="0.125"></span> TSP</li>
+                <li>Coriander Powder - <span id = "ing11" value="0.5"></span> TSP</li>
+                <li>Garam Masala Powder - <span id = "ing12" value="0.1875"></span> TSP</li>
+              </ul>
+              
+              <li>Mint & Coriander - <span id = "ing13" value="0.5"></span> TBSP (chopped)</li>
+              <li>Kasuri Methi - <span id = "ing14" value="0.5"></span> TBSP</li>
+              <li>Salt - <span id = "ing15" value="0"></span> To taste</li>
+              <li>Lemon Juice - <span id = "ing16" value="2.5"></span> drops</li>
+              <li>Ghee - <span id = "ing17" value="0.5"></span> TBSP</li>
+            </ul>
+        </div>
+        <div class="instructions">
+            <h4>Instructions</h4>
+            <ol>
+                <li>Wash the rice 2-3 times or until the water runs clear.</li>
+                <li>Soak the rice for at least 15-20 minutes.</li>
+                <li>Take a pan and heat ghee.</li>
+                <li>Also on separate stove, start boiling water on low heat to be used in the later stage. </li>
+                <li>Add cumin seeds and let it crackle.</li>
+                <li>Add cloves and cinnamon and roast for a little bit.</li>
+                <li>Add the chopped onions and cook until the onions turn golden in color.</li>
+                <li>Add ginger garlic paste and cook for a few seconds.</li>
+                <li>Now reduce the heat completely and add <span class="highlight-text">Masala Mix 1.</span></li>
+                <li>Add chopped mint, coriander leaves, and kasuri methi and fry for a few seconds.</li>
+                <li>Add the boiled corn and mix well.</li>
+                <li>Drain the rice completely and add it to the corn-masala mixture and fry for half a minute.</li>
+                <li>Add the boiled water and adjust the salt to taste.</li>
+                <li>Sprinkle some drops of lemon juice.</li>
+                <li>Bring the mixture to boil and then reduce the heat to a sim.</li>
+                <li>Cover the pan and allow the rice to cook for 5 minutes (keep a timer).</li>
+                <li>After 5 minutes, turn off the heat and allow the rice to cook further for another 15 minutes keeping it undisturbed. Don't open the lid.</li>
+                <li>After 15 minutes are up, open the pan and gently fluff up the rice using a fork and cover the pan again for 2 minutes or until you are ready to eat.</li>
+                <li>Serve the rice with raita.</li>
+            </ol>
+        </div>  
+        <hr class="dashed">
+        <div class="Ingredients">
+          <h4>Raita</h4>
+          <h4>Ingredients</h4>
+          <ul>
+            <li>Dahi - <span id="ing18" value="87.5"></span> grams</li>
+            <li>Water - <span id="ing19" value="60"></span> grams</li>
+            <li>Onion - <span id="ing20" value="0.25"></span> medium-sized (chopped)</li>
+            <li>Tomato - <span id="ing21" value="0.125"></span> medium-sized (chopped)</li>
+            <li>Black Pepper Powder - A pinch</li>
+          </ul>
+        </div>
+        <div class="Instructions">
+          <h4>Instructions</h4>
+          <ol>
+            <li>Take bowl and add dahi.</li>
+            <li>Whisk the dahi until it becomes completely smooth.</li>
+            <li>Add water, onions, tomatoes, salt, and black pepper powder and mix well.</li>
+            <li>Serve with the rice.</li>
+          </ol>
+        </div>   
+    </div>
+
+    <div class="notes">
+        <h4>Notes:</h4>
+        <ul>
+          <li>Notes here..</li>
+        </ul>
+      </div>
+</body>
+</html>
