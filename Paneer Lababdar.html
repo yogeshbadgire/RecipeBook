@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Paneer Lababdar Recipe</title>
+</head>
+
+<body onload="servingsList(); updateRecipe();">
+    <h3 class="menu"><a href="index.html">< MENU</a></h3>
+    <h1>Paneer Lababdar</h1>
+    <div class="input-wrapper">
+        <label for="servings">Servings : </label>
+        <select id="servings" onchange="updateRecipe()" value="2">
+          <option>1</option>
+          <option selected>2</option>
+        </select>
+        <!--<button onclick="updateRecipe()">Update Recipe</button> -->
+        <br><br>
+    </div>
+    <div class="recipe">
+        <div class="ingredients">
+            <h4>Ingredients</h4>
+            <h5>Gravy</h5>
+            <ul>
+                <li>Oil - <span id = "ing1" value="0.5"></span> TBSP</li>
+                <li>Jeera - <span id = "ing2" value="0.25"></span> TSP</li>
+                <li>Garlic - <span id = "ing3" value="2"></span> cloves</li>
+                <li>Ginger - <span id = "ing4" value="0.5"></span> inch</li>
+                <li>Green Chillies - <span id = "ing5" value="0.75"></span> Nos.</li>
+                <li>Onions - <span id = "ing6" value="0.5"></span> (medium-sized) sliced</li>
+                <li>Tej Patta - <span id = "ing7" value="0.5"></span> Nos.</li>
+                <li>Cinnamon - <span id = "ing8" value="0.25"></span> inch</li>
+                <li>Green Cardamom - <span id = "ing9" value="1"></span> Nos.</li>
+                <li>Tomatoes - <span id = "ing10" value="0.75"></span> (medium-sized) chopped</li>
+                <li>Coriander Stems - <span id = "ing11" value="0.5"></span> TBSP</li>
+                <li>Salt - <span id = "ing12" value="0"></span> To Taste</li>
+                <li>Kashmiri Red Chilli Powder - <span id = "ing13" value="0.25"></span> TSP</li>
+                <li>Turmeric Powder - <span id = "ing14" value="0.25"></span> TSP</li>
+                <li>Cashews - <span id = "ing15" value="4"></span> </li>
+                <li>Magaz Seeds - <span id = "ing16" value="0.75"></span> TBSP</li>    
+            </ul>
+
+            <h5>Paneer Coating</h5>
+            <ul>
+                <li>Oil - <span id = "ing17" value="0.5"></span> TBSP</li>
+                <li>Paneer - <span id = "ing18" value="125"></span> grams</li>
+                <li>Turmeric Powder - <span id = "ing19" value="0.125"></span> TSP</li>
+                <li>Kashmiri Red Chilli Powder - <span id="ing36" value = "0.25"></span> TSP</li>
+                <li>Salt - A pinch</li>
+            </ul>
+
+            <h5>Final Sabji</h5>
+            <ul>
+                <li>Oil - <span id = "ing20" value="0.75"></span> TBSP</li>
+                <li>Cumin Seeds - <span id = "ing21" value="0.25"></span> TSP</li>
+                <li>Green Chillies - <span id = "ing22" value="0.5"></span> Nos.</li>
+                <li>Onions - <span id = "ing23" value="0.5"></span> (medium-sized) chopped</li>
+                <li>Ginger Garlic Paste - <span id = "ing24" value="0.25"></span> TBSP</li>
+                <li>Turmeric Powder - <span id = "ing25" value="0.0625"></span> TSP</li>
+                <li>Coriander Powder - <span id = "ing26" value="0.25"></span> TSP</li>
+                <li>Tomatoes - <span id = "ing27" value="0.5"></span> (medium-sized) chopped</li>
+                <li>Salt - <span id = "ing28" value="0"></span> To Taste</li>
+                <li>Capsicum - <span id = "ing29" value="0.25"></span> Nos. (chopped)</li>
+                <li>Fresh Cream - <span id = "ing30" value="0.75"></span> TBSP</li>
+                <li>Butter - <span id = "ing31" value="0.5"></span> TBSP</li>
+                <li>Kasuri Methi - <span id = "ing32" value="0.125"></span> TSP</li>
+                <li>Garam Masala - <span id = "ing33" value="0"></span> A pinch</li>
+                <li>Cheese Cube - <span id = "ing34" value="0.5"></span> Nos. (grated)</li>
+                <li>Fresh Coriander - <span id = "ing35" value="0"></span> A handful</li>
+            </ul>
+        </div>
+        <div class="instructions">
+            <h4>Instructions</h4>
+            <h5>Gravy</h5>
+            <ol>
+                <li>Take a pan and heat oil.</li>
+                <li>Add cumin seeds and let crackle.</li>
+                <li>Add garlic, ginger, green chillies, onions, tej patta, cinnamon, and green cardamom and cook on high flame until onions become translucent.</li>
+                <li>Once the onions are translucent, add tomatoes, coriander stems, salt, kashmiri red chilli powder, turmeric powder, cashews, and magaz seeds and cook on medium flame until tomatoes are mushy.</li>
+                <li>Add hot water and cover the pan and cook for atleast 10-12 minutes.</li>
+                <li>Remove tej patta and cinnamon and let the mixture cool down.</li>
+                <li>Grind the mixture and make a smooth and fine paste.</li>
+                <li>Strain the gravy and keep it aside for further use. </li>
+
+            </ol>
+
+            <h5>Paneer Coating</h5>
+            <ol>
+                <li>Take a pan and heat oil in it.</li>
+                <li>Add paneer cubes, turmeric powder, kashmiri red chilli powder, and salt and toss for a bit until the panner cubes are coated well.</li>
+                <li>Keep it aside for further use.</li>
+            </ol>
+
+            <h5>Final Sabji</h5>
+            <ol>
+                <li>Take a pan and heat oil in it.</li>
+                <li>Add cumin seeds and let crackle.</li>
+                <li>Add chopped green chillies, chopped onions and saute on high flame until the onions turn golden brown.</li>
+                <li>Add ginger garlic paste and cook until raw smell disappears.</li>
+                <li>Lower the flame and add turmeric powder, kashmiri red chilli powder, coriander powder, and hot water and cook well.</li>
+                <li>Add chopped tomatoes and salt cook until tomatoes are completely mushy.</li>
+                <li>Add chopped capsicum and cook for a minute.</li>
+                <li>Add gravy and cook for 5-6 minutes and add a pinch of sugar.</li>
+                <li>Add paneer, fresh cream, butter, kasuri methi, garam masala, and cheese.</li>
+                <li>Add fresh coriander.</li>
+                <li>Paneer Lababdar is ready.</li>
+            </ol>
+        </div>     
+    </div>
+    <div class="notes">
+        <h4>Notes:</h4>
+        <ul>
+          <li>Notes here..</li>
+        </ul>
+      </div>
+</body>
+</html>
