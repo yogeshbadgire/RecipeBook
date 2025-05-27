@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Masale Bhaat Recipe</title>
+</head>
+
+<body onload="servingsList(); updateRecipe();">
+    <h3 class="menu"><a href="index.html">< MENU</a></h3>
+    <h1>Masale Bhaat Recipe</h1>
+    <div class="input-wrapper">
+        <label for="servings">Servings : </label>
+        <select id="servings" onchange="updateRecipe()" value="2">
+          <option>1</option>
+          <option selected>2</option>
+        </select>
+        <!--<button onclick="updateRecipe()">Update Recipe</button> -->
+        <br><br>
+    </div>
+    <div class="recipe">
+        <div class="ingredients">
+            <h4>Ingredients</h4>
+            <h4>Green Vatan</h4>
+            <ul>
+                <li>Fresh Coconut - <span id = "ing20" value="0.125"></span> cup</li>
+                <li>Coriander - <span id = "ing21" value="0"></span> A handful</li>
+                <li>Ginger - <span id = "ing22" value="0.25"></span> TBSP</li>
+                <li>Green Chillies - <span id = "ing23" value="1"></span> Nos.</li>
+            </ul>
+            <h4>Masale Bhaat</h4>
+            <ul>
+                <li>Rice - <span id = "ing1" value="112.5"></span> grams</li>
+                <li>Oil - <span id = "ing2" value="1.5"></span> TBSP</li>
+                <li>Mustard Seeds - <span id = "ing3" value="0.25"></span> TBSP</li>
+                <li>Cumin Seeds - <span id = "ing4" value="0.25"></span> TBSP</li>
+                <li>Curry Leaves - <span id = "ing5" value="2.5"></span> Nos.</li>
+                <li>Bay Leaves - <span id = "ing6" value="1"></span> Nos.</li>
+                <li>Black Pepper - <span id = "ing7" value="3"></span> </li>
+                <li>Star Anise - <span id = "ing8" value="0.5"></span> Nos.</li>
+                <li>Cloves - <span id = "ing9" value="2"></span> Nos.</li>
+                <li>Cinnamon - <span id = "ing10" value="0.25"></span> inch</li>
+                <li>Cashews - <span id = "ing11" value="0.5"></span> TBSP</li>
+                <li>Brinjal - <span id = "ing12" value="0.25"></span> </li>
+                <li>Tondali - <span id = "ing13" value="1.5"></span> Nos.</li>
+                <li>Potatoes - <span id = "ing14" value="0.25"></span> Nos.</li>
+                <li>Peas - <span id = "ing15" value="0.125"></span> cup</li>
+                <li>Ghee - <span id = "ing16" value="0.5"></span> TBSP</li>
+                <li>Coriander - <span id = "ing17" value="0"></span> A handful</li>
+                <li>Goda Masala - <span id = "ing18" value="0.25"></span> TSP</li>
+                <li>Coriander Powder - <span id = "ing19" value="0.25"></span> TBSP</li>    
+            </ul>
+        </div>
+        <hr class="dashed">
+        <div class="instructions">
+            <h4>Instructions</h4>
+            <ol>
+                <li>Instructions start here.</li>
+            </ol>
+        </div>     
+    </div>
+    <div class="notes">
+        <h4>Notes:</h4>
+        <ul>
+          <li>Notes here..</li>
+        </ul>
+      </div>
+</body>
+</html>
