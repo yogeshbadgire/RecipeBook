@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Caramalized Onions and Garlic Spaghetti</title>
+</head>
+
+<body onload="servingsList(); updateRecipe();">
+    <h3 class="menu"><a href="index.html">< MENU</a></h3>
+    <h1>Caramalized Onions and Garlic Spaghetti</h1>
+    <div class="input-wrapper">
+        <label for="servings">Servings : </label>
+        <select id="servings" onchange="updateRecipe()" value="2">
+          <option>1</option>
+          <option selected>2</option>
+        </select>
+        <!--<button onclick="updateRecipe()">Update Recipe</button> -->
+        <br><br>
+    </div>
+    <div class="recipe">
+        <div class="ingredients">
+            <h4>Ingredients</h4>
+            <ul>
+                <li>Onion - <span id = "ing1" value="0.5"></span> Large (thinly sliced)</li>
+                <li>Garlic - <span id = "ing2" value="2"></span> Cloves (minced)</li>
+                <li>Chilli Crisp - <span id = "ing3" value="1"></span> TBSP</li>
+                <li>Fresh Cream (250ml Pack) - <span id = "ing4" value="0.5"></span></li>
+                <li>Soy Sauce - <span id = "ing5" value="0.5"></span> TBSP</li>
+                <li>Cheese - <span id = "ing6" value="0.25"></span> Cup (grated)</li>
+                <li>Spaghetti Pasta - <span id = "ing7" value="75"></span> grams (dry weight)</li>                    
+                <li>Butter - <span id = "ing8" value="1"></span> TBSP</li>
+                <li>Olive Oil - <span id = "ing9" value="0.5"></span> TBSP</li>
+                <li>Parsley - For garnishing</li>
+                <li><span class="highlight-text">Seasonings Mix</span></li>
+                <ul>
+                    <li>Red Chilli Powder - <span id = "ing10" value="0.5"></span> TSP</li>
+                    <li>Garlic Powder - <span id = "ing11" value="0.5"></span> TSP</li>
+                    <li>Salt - <span id = "ing12" value="0.5"></span> TSP</li>
+                    <li>Black Pepper - <span id = "ing13" value="0.5"></span> TSP</li>
+                    <li>Italian Seasoning - <span id = "ing14" value="0.5"></span> TSP</li>                </ul>
+            </ul>
+        </div>
+        <div class="instructions">
+            <h4>Instructions</h4>
+            <ol>
+                <li>Take a pan and heat butter and oil together.</li>
+                <li>Add the sliced onions and cook on low heat until they are caramelized (about 20-30 minutes).</li>
+                <li>While the onions are cooking, boil water in a separate pot and cook the spaghetti according to package instructions.</li>
+                <li>Drain the pasta but DON'T throw away the pasta water</li>
+                <li>Once the onions are caramelized, add garlic along with the <span class="highlight-text">Seasonings Mix</span>.</li>
+                <li>Cook for a minute and add chilli crisp and saute for a minute.</li>
+                <li>Pour the fresh cream and let it simmer for a few minutes and then add grated cheese.</li>
+                <li>Mix well until the cheese is melted and the sauce is creamy.</li>
+                <li>If the sauce becomes too thick, add some pasta water to make it silky.</li>
+                <li>Add the cooked spaghetti to the pan and toss it well to coat the pasta with the sauce.</li>
+                <li>Serve hot, garnished with extra cheese if you want and a sprinkle of chopped parsley.</
+            </ol>
+        </div>     
+    </div>
+    <div class="notes">
+        <h4>Notes:</h4>
+        <ul>
+          <li>Notes here..</li>
+        </ul>
+      </div>
+</body>
+</html>
