@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Masala Khichdi Recipe</title>
+</head>
+
+<body onload="servingsList(); updateRecipe();">
+    <h3 class="menu"><a href="index.html">< MENU</a></h3>
+    <h1>Masala Khichdi Recipe</h1>
+    <div class="input-wrapper">
+        <label for="servings">Servings : </label>
+        <select id="servings" onchange="updateRecipe()" value="2">
+          <option>1</option>
+          <option selected>2</option>
+        </select>
+        <!--<button onclick="updateRecipe()">Update Recipe</button> -->
+        <br><br>
+    </div>
+    <div class="recipe">
+        <div class="ingredients">
+            <h4>Ingredients</h4>
+            <ul>
+                <li>Rice - <span id = "ing1" value="67.5"></span> grams</li>
+                <li>Moong Dal - <span id = "ing2" value="30"></span> grams</li>
+                <li>Oil - <span id = "ing14" value="2"></span> TSP</li>
+                <li>Mustard Seeds - <span id="ing15" value="0.5"></span> TSP</li>
+                <li>Curry Leaves - <span id = "ing8" value="3"></span> </li>
+                <li>Potato - <span id = "ing3" value="0.5"></span> small (cubed)</li>
+                <li>Onion - <span id = "ing4" value="0.5"></span> medium (chopped)</li>
+                <li>Garlic - <span id = "ing5" value="4"></span> cloves (grated)</li>
+                <li>Tomato - <span id = "ing6" value="0.25"></span> medium (finely chopped)</li>
+                <li>Peanuts - <span id = "ing7" value="5"></span> grams</li>
+                <li class="highlight-text">Masala Mixture</li>
+                <ul>
+                    <li>Turmeric Powder - <span id = "ing9" value="0.125"></span> TSP</li>
+                    <li>Red Chilli Powder - <span id = "ing10" value="0.25"></span> TSP</li>
+                    <li>Kala Masala - <span id = "ing11" value="0.1875"></span> TSP</li>
+                </ul>                
+                <li>Salt - <span id = "ing12" value="0"></span> To Taste</li>
+                <li>Water - <span id = "ing13" value="262.5"></span> grams</li>
+            </ul>
+        </div>
+        <div class="instructions">
+            <h4>Instructions</h4>
+            <ol>
+                <li>Wash the rice and moong dal together for atleast 2-3 times.</li>
+                <li>Keep the washed rice and moong dal aside and let it soak for half an hour.</li>
+                <li>Start heating water in a separate pot.</li>
+                <li>Take a pressure cooker and heat oil.</li>
+                <li>Add mustard seeds and let crackle.</li>
+                <li>Add curry leaves, garlic and onions and cook until onions are golden brown.</li>
+                <li>Add potatoes and cook for 2-3 minutes.</li>
+                <li>Add tomato and sprinkle some salt and cook for another 3-4 minutes.</li>
+                <li>Add peanuts and the <span class="highlight-text">Masala Mixture</span> and cook for another 2-3 minutes.</li>
+                <li>Add the soaked rice and moong dal and mix well.</li>
+                <li>Pour the hot water into the cooker and mix everything well.</li>
+                <li>Close the lid of the cooker and cook for 3 whistles on medium flame and for 1 whistle on low flame.</li>
+                <li>Turn off the flame and let the pressure release naturally.</li>
+                <li>Open the lid and mix the khichdi well.</li>
+                <li>Serve hot with papad and pickle.</li>
+                <li>Enjoy your delicious Masala Khichdi!</li>
+            </ol>
+        </div>     
+    </div>
+    <div class="notes">
+        <h4>Notes:</h4>
+        <ul>
+          <li>Notes here..</li>
+        </ul>
+      </div>
+</body>
+</html>
