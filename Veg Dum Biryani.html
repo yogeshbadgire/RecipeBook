@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Veg Dum Biryani</title>
+</head>
+
+<body onload="servingsList(); updateRecipe();">
+    <h3 class="menu"><a href="index.html">< MENU</a></h3>
+    <h1>Veg Dum Biryani</h1>
+    <div class="input-wrapper">
+        <label for="servings">Servings : </label>
+        <select id="servings" onchange="updateRecipe()" value="2">
+          <option>1</option>
+          <option selected>2</option>
+        </select>
+        <!--<button onclick="updateRecipe()">Update Recipe</button> -->
+        <br><br>
+    </div>
+    <div class="recipe">
+        <div class="ingredients">
+            <h4>Ingredients</h4>
+            <ul>
+                <li>Basmati Rice - <span id = "ing1" value="125"></span> grams</li>
+                <li>Water - <span id = "ing2" value="0"></span> As required</li>
+                <li>Onions - <span id = "ing3" value="1.5"></span> medium-sized</li>
+                <li>Garlic - <span id = "ing4" value="5"></span> cloves</li>
+                <li>Ginger - <span id = "ing5" value="0.5"></span> inch</li>
+                <li>Green Chillies - <span id = "ing6" value="1"></span> Nos.</li>
+                <li>Tomato - <span id = "ing7" value="0.5"></span> medium-sized</li>
+                <li>Coriander - <span id = "ing8" value="0"></span> A handful</li>
+                <li>Mint - <span id = "ing9" value="0"></span> A handful</li>
+                <li>Carrots - <span id = "ing10" value="0.5"></span> medium-sized (large chopped)</li>
+                <li>Beans - <span id = "ing11" value="4"></span> pieces</li>
+                <li>Cauliflower - <span id = "ing12" value="0.125"></span> pieces</li>
+                <li>Potato - <span id = "ing13" value="0.5"></span> medium-sized (large chopped)</li>
+                <li>Oil - <span id = "ing14" value="1"></span> TBSP</li>
+                <li class="highlight-text">Masala Mix 1</li>
+                <ul>
+                    <li>Turmeric Powder - <span id = "ing15" value="0.0625"></span> TSP</li>
+                    <li>Kashmiri Red Chilli Powder - <span id = "ing16" value="0.25"></span> TBSP</li>
+                    <li>Red Chilli Powder - <span id = "ing17" value="0.25"></span> TSP</li>
+                    <li>Coriander Powder - <span id = "ing18" value="0.5"></span> TSP</li>
+                    <li>Biryani Masala - <span id = "ing19" value="0.375"></span> TBSP</li>
+                </ul>
+                <li>Dahi - <span id = "ing20" value="50"></span> grams</li>
+                <li class="highlight-text">Masala Mix 2</li>
+                <ul>
+                    <li>Bay Leaf - <span id = "ing21" value="0.5"></span> Nos.</li>
+                    <li>Cinnamon - <span id = "ing22" value="0.25"></span> inch</li>
+                    <li>Cloves - <span id = "ing23" value="2"></span> pieces</li>
+                    <li>Star Anise - <span id = "ing24" value="0.25"></span> pieces</li>
+                    <li>Black Peppercorns - <span id = "ing25" value="2"></span> pieces</li>
+                    <li>Shah Jeera - <span id = "ing26" value="0.125"></span> TSP</li>
+                </ul>                
+                <li>Lemon Juice - <span id = "ing27" value="0.125"></span> pieces</li>
+                <li>Green Chilli - <span id = "ing28" value="0.25"></span> pieces</li>
+    
+            </ul>
+        </div>
+        <div class="instructions">
+            <h4>Instructions</h4>
+            <ol>
+                <li>Instructions start here.</li>
+            </ol>
+        </div>     
+    </div>
+    <div class="notes">
+        <h4>Notes:</h4>
+        <ul>
+          <li>Notes here..</li>
+        </ul>
+      </div>
+</body>
+</html>
