@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Soya Curry Recipe (Pressure Cook Method)</title>
+</head>
+
+<body onload="servingsList(); updateRecipe();">
+    <h3 class="menu"><a href="index.html">< MENU</a></h3>
+    <h1>Soya Curry Recipe (Pressure Cook Method)</h1>
+    <div class="input-wrapper">
+        <label for="servings">Servings : </label>
+        <select id="servings" onchange="updateRecipe()" value="2">
+          <option>1</option>
+          <option selected>2</option>
+        </select>
+        <!--<button onclick="updateRecipe()">Update Recipe</button> -->
+        <br><br>
+    </div>
+    <div class="recipe">
+        <div class="ingredients">
+            <h4>Ingredients</h4>
+            <ul>
+                <li>Boiled Soya Wadi - <span id = "ing1" value="25"></span> grams (dry)</li>
+                <li>Curd - <span id = "ing2" value="87.5"></span> g</li>
+                <li>Cashews - <span id = "ing3" value="2"></span> pieces</li>
+                <li>Ginger - <span id = "ing4" value="0.5"></span> inch</li>
+                <li>Green Chillies - <span id = "ing5" value="0.5"></span> pieces</li>
+                <li>Turmeric Powder - <span id = "ing6" value="0.0625"></span> TSP</li>
+                <li>Coriander Powder - <span id = "ing7" value="0.375"></span> TBSP</li>
+                <li>Kashmiri Red Chilli Powder - <span id = "ing8" value="0.375"></span> TBSP</li>
+                <li>Red Chilli Powder - <span id = "ing9" value="0.25"></span> TSP</li>
+                <li>Cumin Powder - <span id = "ing10" value="0.125"></span> TSP</li>
+                <li>Garam Masala Powder - <span id = "ing11" value="0.25"></span> TSP</li>
+                <li>Mustard Oil - <span id = "ing12" value="0.25"></span> TBSP</li>
+                <li>Cumin Seeds - <span id = "ing13" value="0.125"></span> TSP</li>
+                <li>Cinnamon - <span id = "ing14" value="0.25"></span> inch</li>
+                <li>Green Cardamom - <span id = "ing15" value="0.5"></span> pieces</li>
+                <li>Bay Leaf - <span id = "ing16" value="0.5"></span> pieces</li>
+                <li>Asafoetida - <span id = "ing17" value="0.0625"></span> TSP</li>
+                <li>Salt - <span id = "ing18" value="0"></span> To taste</li>
+                <li>Hot water - <span id = "ing19" value="0"></span> As required</li>
+                <li>Roasted Kasuri Methi - <span id = "ing20" value="0"></span> To taste</li>
+                <li>Garam Masala Powder - <span id = "ing21" value="0.125"></span> TSP</li>
+                <li>Green Chillies - <span id = "ing22" value="0.25"></span> sliced</li>
+                <li>Fresh Coriander - <span id = "ing23" value="0"></span> As per preference</li>    
+            </ul>
+        </div>
+        <div class="instructions">
+            <h4>Instructions</h4>
+            <ol>
+                <li>Instructions start here.</li>
+            </ol>
+        </div>     
+    </div>
+    <div class="notes">
+        <h4>Notes:</h4>
+        <ul>
+          <li>Notes here..</li>
+        </ul>
+      </div>
+</body>
+</html>
