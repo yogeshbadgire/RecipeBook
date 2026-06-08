@@ -86,7 +86,7 @@ function updateRecipe() {
 function servingsList() {
     const selectElement = document.getElementById("servings");
   
-    for (let i = 3; i <= 100; i++) {
+    for (let i = 2.5; i <= 100; i+=0.5) {
       const option = document.createElement("option");
       option.value = i;
       option.text = i;
